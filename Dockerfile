@@ -21,7 +21,7 @@ COPY --chown=${USER} ./app.py app.py
 COPY --chown=${USER} ./application application
 COPY --chown=${USER} ./db db
 
-RUN chmod 777 -R db
+
 USER ${USER}
 
 ENTRYPOINT ["flask", "run"]
