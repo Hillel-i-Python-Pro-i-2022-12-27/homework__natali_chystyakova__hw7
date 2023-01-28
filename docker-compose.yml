@@ -6,10 +6,8 @@ services:
     build: .
     user: "1000"
     ports:
-      - "5000:5000"
+      - "4500:5000"
     volumes:
-      - ./files_input:/wd/files_input:rw
-      - ./files_output:/wd/files_output:rw
       - ./db:/wd/db:rw
 
     command: --host 0.0.0.0 --port 5000

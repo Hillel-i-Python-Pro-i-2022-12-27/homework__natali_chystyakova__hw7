@@ -19,7 +19,7 @@ RUN pip install --upgrade pip && \
 
 COPY --chown=${USER} ./app.py app.py
 COPY --chown=${USER} ./application application
-COPY --chown=${USER} ./db db
+
 
 
 USER ${USER}
